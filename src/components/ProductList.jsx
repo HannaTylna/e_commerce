@@ -19,8 +19,8 @@ export default function ProductList() {
                return (
                   <div className="product__column col-4">
                      <div className="product__item p-3">
-                        <h2 key={key} className="product__header">
-                           <Link to={`/products/${key}`} className="nav-link">{productItem.name}</Link>
+                        <h2 key={key}>
+                           <Link to={`/products/${key}`} className="nav-link text-uppercase text-center">{productItem.name}</Link>
                         </h2>
                         <div className="product__image">
                            <img

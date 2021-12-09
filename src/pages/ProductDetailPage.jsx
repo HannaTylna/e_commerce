@@ -9,8 +9,11 @@ export default function ProductDetailPage() {
    return (
       <div>
          <BackToProductList />
-         <h2 className="text-center">Product Detail Page {params.id}</h2>
-         <Detail id={params.id} />
+         <div className="product-detail mx-auto my-5 p-3 rounded">
+            <h2 className="text-center">Product Detail Page {params.id}</h2>
+            <Detail id={params.id} />
+         </div>
+         
       </div>
    )
 }

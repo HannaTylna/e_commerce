@@ -9,6 +9,7 @@ export default function BackToProductList() {
             <img
                src="https://img.icons8.com/ios-glyphs/30/000000/undo.png"
                alt="A back arrow"
+               className="m-3"
             />
          </Link>
       </div>

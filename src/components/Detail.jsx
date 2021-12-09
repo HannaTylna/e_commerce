@@ -17,10 +17,14 @@ export default function ProductDetail(props) {
       {productItem && (
          <>
             <h3>{productItem.name}</h3>
-            <img
-               src={productItem.images[0].src.small}
-               alt={productItem.images[0].alt}
-            />
+            <div className="product-detail__wrapper">
+               <img
+                  src={productItem.images[0].src.small}
+                  alt={productItem.images[0].alt}
+                  className="product-detail__image"
+               />
+            </div>
+            
             <p>{productItem.description}</p>
             <p><strong>Price: </strong>{productItem.price}$</p>
             <p><strong>Stock: </strong>{productItem.rating}</p>
