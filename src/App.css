@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.wrapper{
+   max-width: 100%;
+   background: rgb(94,83,115);
+   background: linear-gradient(90deg, rgba(94,83,115,1) 0%, rgba(105,85,98,1) 33%, rgba(180,200,186,1) 82%);
+}
+.header{
+   width: 100%;
+   text-align: center;
+   padding: 0px;
+   color: #262626;
+   font-weight: bold;
+   /*background-color: #5e5373;*/
+   margin-bottom: 0px;
+   box-shadow: 5px 5px 5px 5px #262626;
+   margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+   color: #000;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link:hover{
+   color: #121125;
+   text-decoration: underline;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product__row{
+   /*border: 20px solid #ece89d;*/
+   padding: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.product__column{
+   /*border: 20px solid #5e5373;*/
+   margin: 0px;
+   padding: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product__item{
+   /*background-color: #18b5a4;*/
+   color: #fff;
+}
+.product__image{
+   margin: 0px;
+   padding: 0px 0px 58% 0px;
+   overflow: hidden;
+   position: relative;
+}
+.product__image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.link__back {
+   box-shadow: 5px 5px 5px 5px #262626;
+   
 }
